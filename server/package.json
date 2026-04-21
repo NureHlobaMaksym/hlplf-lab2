@@ -1,0 +1,33 @@
+{
+  "name": "hlplf-lab2-server",
+  "version": "1.0.0",
+  "description": "Lab 2 backend: Express + TypeORM + PostgreSQL",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "nodemon -L src/server.js",
+    "start": "node src/server.js",
+    "lint": "echo 'No linter configured yet'",
+    "typeorm": "typeorm -d src/config/migration-data-source.js",
+    "migration:run": "npm run typeorm -- migration:run",
+    "migration:revert": "npm run typeorm -- migration:revert",
+    "migration:generate": "npm run typeorm -- migration:generate -o",
+    "migration:create": "npm run typeorm -- migration:create",
+    "migration:show": "npm run typeorm -- migration:show"
+  },
+  "dependencies": {
+    "compression": "^1.7.5",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "pg": "^8.12.0",
+    "reflect-metadata": "^0.2.2",
+    "typeorm": "^0.3.20",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
