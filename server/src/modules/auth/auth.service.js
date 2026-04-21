@@ -49,7 +49,6 @@ class AuthService {
       lastName,
       email,
       passwordHash,
-      bio: null,
       allowMessagesFrom: ALLOW_MESSAGES_FROM.FRIENDS
     });
 

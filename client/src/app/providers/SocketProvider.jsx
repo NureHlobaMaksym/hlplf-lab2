@@ -98,7 +98,6 @@ export const SocketProvider = ({ children }) => {
       return;
     }
 
-    // Reset unread strictly for the selected chat immediately in UI.
     setChats((prev) => prev.map((chat) => (chat.peer.id === normalized ? { ...chat, unreadCount: 0 } : chat)));
 
     socket.emit('chat_open', { peerId: normalized });

@@ -31,7 +31,6 @@ export const UserProfilePage = () => {
               <h3>
                 {profile.user.firstName} {profile.user.lastName}
               </h3>
-              <p className="muted">{profile.user.bio || 'Без біо'}</p>
             </div>
             {profile.user.id !== user.id && profile.user.canMessage ? (
               <Button onClick={() => navigate(`/chats?peerId=${profile.user.id}`)}>Написати</Button>

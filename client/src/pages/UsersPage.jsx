@@ -34,7 +34,6 @@ export const UsersPage = () => {
                   <h4>
                     {user.firstName} {user.lastName}
                   </h4>
-                  <p className="muted">{user.bio || 'Без біо'}</p>
                 </div>
                 <div className="row">
                   <Link className="link-btn" to={`/users/${user.id}`}>

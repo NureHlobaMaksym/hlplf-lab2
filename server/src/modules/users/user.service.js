@@ -22,7 +22,6 @@ class UserService {
       firstName: user.firstName,
       lastName: user.lastName,
       email: user.email,
-      bio: user.bio,
       allowMessagesFrom: user.allowMessagesFrom,
       createdAt: user.createdAt,
       updatedAt: user.updatedAt

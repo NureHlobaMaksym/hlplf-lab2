@@ -27,10 +27,6 @@ const UserEntity = new EntitySchema({
       type: String,
       length: 255
     },
-    bio: {
-      type: String,
-      nullable: true
-    },
     allowMessagesFrom: {
       type: String,
       length: 20,
